@@ -1,6 +1,6 @@
 {
-  "name": "eth-net-intelligence-api",
-  "description": "Ethereum Network Intelligence API",
+  "name": "fourtwenty-net-intelligence-api",
+  "description": "420coin Network Intelligence API",
   "version": "0.1.1",
   "private": true,
   "main": "./app.js",
@@ -24,24 +24,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cubedro/eth-net-intelligence-api.git"
+    "url": "https://github.com/420integrated/fourtwenty-net-intelligence-api.git"
   },
-  "homepage": "https://github.com/cubedro/eth-net-intelligence-api",
+  "homepage": "https://github.com/420integrated/fourtwenty-net-intelligence-api",
   "bugs": {
-    "url": "https://github.com/cubedro/eth-net-intelligence-api/issues"
+    "url": "https://github.com/420integrated/fourtwenty-net-intelligence-api/issues"
   },
   "keywords": [
-    "ethereum",
+    "420coin",
+    "fourtwenty",
     "network",
     "intelligence",
     "API"
   ],
-  "author": "ethdev.com",
+  "author": "420integrated.com",
   "authors": [
     {
-      "name": "Marian Oancea",
-      "email": "marian@ethdev.com",
-      "url": "https://github.com/cubedro"
+      "name": "420Integrated",
+      "email": "420dev@420integrated.com",
+      "url": "https://github.com/420integrated"
     }
   ],
   "license": "LGPL-3.0"

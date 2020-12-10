@@ -25,20 +25,20 @@ error()
 	echo "${red}==>${bold} Error: $1${reset}"
 }
 
-heading "You're about to install ethereum."
+heading "You're about to install 420coin."
 echo "Please choose one of the following:"
-echo "1. eth"
-echo "2. geth"
+echo "1. fourtwenty"
+echo "2. g420"
 while true; do
     read -p "Choose the implementation: " imp
     case $imp in
-        [1]* ) ethtype="eth"; break;;
-        [2]* ) ethtype="geth"; break;;
+        [1]* ) fourtwentytype="fourtwenty"; break;;
+        [2]* ) fourtwentytype="g420420"; break;;
         * ) echo "Please answer 1 or 2.";;
     esac
 done
 
-heading "Installing" $ethtype
+heading "Installing" $fourtwentytype
 
 cd ~
 
@@ -50,13 +50,13 @@ sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install -y software-properties-common
 
-# add ethereum repos
-sudo add-apt-repository -y ppa:ethereum/ethereum
-sudo add-apt-repository -y ppa:ethereum/ethereum-dev
+# add 420coin repos
+sudo add-apt-repository -y ppa:420integrated/go-420coin
+sudo add-apt-repository -y ppa:420integrated/go-420coin-dev
 sudo apt-get update -y
 
-# install ethereum & install dependencies
-sudo apt-get install -y build-essential git unzip wget nodejs npm ntp cloud-utils $ethtype
+# install 420coin & install dependencies
+sudo apt-get install -y build-essential git unzip wget nodejs npm ntp cloud-utils $fourtwentytype
 
 # add node symlink if it doesn't exist
 [[ ! -f /usr/bin/node ]] && sudo ln -s /usr/bin/nodejs /usr/bin/node
@@ -75,7 +75,7 @@ sudo chmod 755 /etc/cron.hourly/ntpdate
 # add node service
 cd ~/bin
 
-[ ! -d "www" ] && git clone https://github.com/cubedro/eth-net-intelligence-api www
+[ ! -d "www" ] && git clone https://github.com/420integrated/fourtwenty-net-intelligence-api www
 cd www
 git pull
 
